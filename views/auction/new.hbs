@@ -1,0 +1,24 @@
+<form method="post" action="/auction/new">
+    <label for="title-input" class="block mar-b-1">Item name:</label>
+    <input id="title-input" name="title" type="text" value="{{auction.title}}" tabindex="1"
+        class="block w-100 no-outline no-border pad-1 mar-b-2">
+
+    <label for="title-input" class="block mar-b-1">Condition:</label>
+    <input id="title-input" name="condition" type="text" value="{{auction.condition}}" tabindex="1"
+        class="block w-100 no-outline no-border pad-1 mar-b-2">
+
+    <label for="title-input" class="block mar-b-1">Starts at:</label>
+    <input id="title-input" name="start" type="text" value="{{auction.start}}" tabindex="1"
+        class="block w-100 no-outline no-border pad-1 mar-b-2">
+
+    <label for="title-input" class="block mar-b-1">Ends at:</label>
+    <input id="title-input" name="end" type="text" value="{{auction.end}}" tabindex="1"
+        class="block w-100 no-outline no-border pad-1 mar-b-2">
+
+    <label for="body-textarea" class="block mar-b-1">Description:</label>
+    <textarea id="body-textarea" name="description" tabindex="2"
+        class="block w-100 h-10 no-resize no-outline no-border no-resize pad-1 mar-b-2">{{auction.body}}</textarea>
+
+    <input type="submit" value="Publish" tabindex="3"
+        class="block button w-100 mar-t-4 mar-b-3 pad-2 round-1 text-c center no-border no-outline">
+</form>

@@ -1,0 +1,26 @@
+<style>
+    #myMap {
+        height: 500px;
+        width: 100%;
+    }
+</style>
+<div id="myMap" class='mar-t-4 mar-b-3 pad-2'></div>
+
+
+<input type="submit" value="Create Le Tour de Bars nearby" tabindex="3"
+    class="block button w-100 mar-t-4 mar-b-3 pad-2 round-1 text-c center no-border no-outline">
+<div id='listOfPubs'></div>
+
+
+<form>
+
+    <input class="button mar-t-4 mar-b-3 pad-2 round-1 text-c center no-border no-outline" type="button"
+        value="Show the bars" onclick="codeAddress()">
+    <input class="button mar-t-4 mar-b-3 pad-2 round-1 text-c center no-border no-outline" type="button"
+        value="Create route" onclick="">
+</form>
+
+<script src="/js/mapFunctions.js">
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvHBhoD_Vt3DxDLLeuFPRrl7XUdnlM19U&callback=initMap" async
+    defer></script>

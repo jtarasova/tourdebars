@@ -1,0 +1,12 @@
+<h1>Welcome, {{{name}}}!</h1>
+This is your auctions:
+{{#each auctions}}
+<li>
+    <a href="/auction/{{id}}">{{title}}</a>
+</li>
+{{/each}}
+{{#if userLogged}}
+<div>
+    <a href="/map" class="right" style="border: solid 2px rgba(255, 255, 255, 0.644);"> Create new Le Tour de Bars</a>
+</div>
+{{/if}}
